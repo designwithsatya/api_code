@@ -20,7 +20,7 @@ app.use(cors(corsOptions));
 
 // ****** SEND API
 app.get("/", async (req, res) => {
-  res.send("hello user");
+  res.send("Production is working");
 });
 app.post("/send", async (req, res) => {
   try {

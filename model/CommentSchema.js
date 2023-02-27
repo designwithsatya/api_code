@@ -1,6 +1,7 @@
-const mongooose = require("mongoose");
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
 
-const CommentSchema = new mongooose.Schema({
+const CommentSchema = new mongoose.Schema({
   user: {
     type: String,
   },
@@ -36,5 +37,5 @@ const CommentSchema = new mongooose.Schema({
   ],
 });
 
-const CommentModel = mongooose.model("comment", CommentSchema);
+const CommentModel = mongoose.model("comment", CommentSchema);
 module.exports = CommentModel;
